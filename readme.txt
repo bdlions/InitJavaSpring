@@ -1,0 +1,2 @@
+- Place AuthCommon, AuthSession, AuthTransport into the save diretory of project root directory.
+- After run the project, insert default data from the schema file kept inside project directory.
