@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.bdlions.controller;
 
 import com.bdlions.commons.ClientMessages;
@@ -12,23 +7,21 @@ import com.google.gson.JsonParser;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
-import org.bdlions.db.HibernateUtil;
-import org.bdlions.dto.User;
-import org.bdlions.manager.UserManager;
 import org.bdlions.packet.PacketHeaderImpl;
 import org.bdlions.transport.packet.IPacket;
 import org.bdlions.transport.packet.IPacketHeader;
 import org.bdlions.transport.packet.RequestPacketImpl;
 import org.bdlions.util.ClientRequestHandler;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.multipart.MultipartFile;
 
 /**
  *
  * @author nazmul hasan
  */
+@CrossOrigin
 @RestController
 public class RequestIndex {
     @RequestMapping("/")
